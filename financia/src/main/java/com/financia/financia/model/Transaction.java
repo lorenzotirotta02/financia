@@ -25,7 +25,10 @@ public class Transaction {
     private String description;
     @CurrentTimestamp
     private LocalDateTime date;
+
+    @Enumerated(EnumType.STRING)
     private TransactionType type;
+
     private String category;
 
     @ManyToOne(fetch = FetchType.LAZY)

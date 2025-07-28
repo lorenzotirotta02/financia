@@ -11,5 +11,8 @@ public interface ITransactionService {
 
     Transaction createTransaction(TransactionDTO transaction);
 
-    BigDecimal sumTransactionsByType(TransactionType transactionType);
+    void deleteTransaction(Long transactionId);
+
+    void updateTransaction(TransactionDTO transaction);
+
 }

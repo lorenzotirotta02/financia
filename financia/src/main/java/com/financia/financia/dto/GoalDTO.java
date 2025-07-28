@@ -1,28 +1,23 @@
 package com.financia.financia.dto;
 
-
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 import java.math.BigDecimal;
+import java.time.LocalDate;
 
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
-public class TransactionDTO {
+@AllArgsConstructor
+public class GoalDTO {
 
     private Long id;
-
-    private BigDecimal amount;
-
-    private String description;
-
-    private String type;
-
-    private String category;
-
-    private Long user;
+    private String name;
+    private BigDecimal targetAmount;
+    private BigDecimal savedAmount;
+    private String deadline;
+    private Long userId;
 }
